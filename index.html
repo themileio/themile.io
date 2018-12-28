@@ -3,31 +3,32 @@
 <head>
 <title>The Mile: Grow your startup with confidence</title>
 <style>
-@import url('https://fonts.googleapis.com/css?family=Merriweather:300,700|Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:300,700|Open+Sans:300');
 
 html, body {
 	height: 100%;
 	margin: 0;
     font-family: 'Open Sans', sans-serif;
 	font-size: 62.5%;
+	text-align: center;
 }
+body>*>*{
+aborder: solid 1px red;}
 h1 {
     font-family: 'Merriweather', serif;
 	font-weight: 300;
-	font-size: calc(5vw + 3 * ((100vw - 50vw) / 60));
-	text-align: center;
-	margin-bottom: 0px;
-	line-height: 1em;
+	font-size: 8rem; // max = 8rem
+	line-height: 8rem;
+	margin-bottom: 1vh;
 }
 h1>span {
 	font-weight: 700;
+	margin-left: 0.5rem;
 }
 h2 {
-	margin: 0.2em;
-	font-size: calc(3vw + 0.05 * ((100vw - 80vw) / 60)); 4vw; 3rem;
-	font-weight: lighter;
-	text-align: center;
-	line-height: 1em;
+	margin: 0;
+	font-size: 3.5rem; // max = 3.5rem
+	line-height: 3.5rem;
 }
 div {
 	max-height: 98vh;
@@ -41,47 +42,42 @@ h1, h2{
 	max-width: 80vw;
 }
 p {
-	font-size: calc(2vw + 0.5 * ((100vw - 90vw) / 60)); 2vw; 2rem;
-	margin: 0.5em;
+	font-size: 2rem; // max = 2rem
+	padding: 0;
+	margin: 0;
 }
 p:first-of-type {
-	margin-top: 4vh;
+	margin-top: 8vh;
+	margin-bottom: 4vh;
+	letter-spacing: 0.2rem;
 }
 p>a {
-	
 	text-decoration: none;
 	color: #666;
 	letter-spacing: 0.1rem;
 }
-@media screen and (max-width: 60rem){
+
+@media screen and (max-width: 960px){
 h1 {
-	font-size: calc(12vw + 5 * ((100vw - 60rem) / 60));
+	afont-size: calc( 8rem + ( 8 - 4 ) * ( ( 100vw - 960 ) / ( 1200 - 960 ) ) );
 }
+}
+
 h2 {
-	font-size: calc(4vw + 0.5 * ((100vw - 60rem) / 60));
+	
 }
 p {
-	font-size: calc(3vw + 0.5 * ((100vw - 60rem) / 60));
+	
 }
 }
-@media screen and (max-width: 32rem){
-h1 {
-	font-size: calc(12vw + 5 * ((100vw - 32rem) / 60));
-}
-h2 {
-	font-size: calc(4vw + 1 * ((100vw - 32rem) / 60));
-}
-p {
-	font-size: calc(3vw + 1 * ((100vw - 32rem) / 60));
-}
-}
+
 </style> 
 </head>
 <body>
 <div>
 <h1>the<span>mile</span></h1>
-<h2>Know what to do next.</h2>
-<h2>Grow your startup with confidence.</h2>
+<h2>Know what to do next</h2>
+<h2>Grow your startup with confidence</h2>
 <p>Coming soon</p>
 <p><a href="mailto:ask@themile.io">ask@themile.io</a></p>
 </div>
